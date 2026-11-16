@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Assignment 11</title></head>
+<body>
+  <a href="#main" style="position:absolute;left:-999px"
+     onfocus="this.style.left='5px'" onblur="this.style.left='-999px'">Skip to main content</a>
+
+  <header role="banner">
+    <h1>Accessible Page</h1>
+    <nav aria-label="Main navigation">
+      <a href="#main">Home</a> <a href="#form">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h2>Meaningful headings</h2>
+    <img src="photo.jpg" alt="Students studying in a library">
+    <p><a href="report.pdf">Download the annual report (PDF)</a></p>
+
+    <form id="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required aria-required="true">
+      <button type="submit" aria-label="Submit contact form">Send</button>
+    </form>
+  </main>
+
+  <footer><p>&copy; 2026</p></footer>
+</body>
+</html>
