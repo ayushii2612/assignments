@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Assignment 16</title></head>
+<body>
+  <form action="#" method="post">
+    <p><label for="course">Course:</label>
+      <select id="course" name="course">
+        <option value="">--Select--</option>
+        <optgroup label="Engineering">
+          <option value="cse">CSE</option>
+          <option value="me" selected>Mechanical</option>
+        </optgroup>
+        <optgroup label="Management">
+          <option value="mba">MBA</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p><label for="skills">Skills (multiple):</label><br>
+      <select id="skills" name="skills" multiple size="3">
+        <option>HTML</option><option>CSS</option><option>JavaScript</option>
+      </select>
+    </p>
+
+    <p><label for="msg">Message:</label><br>
+      <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Type here..."></textarea>
+    </p>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+  </form>
+</body>
+</html>
