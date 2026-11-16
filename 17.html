@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Assignment 17</title></head>
+<body>
+  <form action="#" method="post" autocomplete="on">
+    <p><label for="u">Username (4-12 letters):</label>
+      <input type="text" id="u" name="u" required minlength="4" maxlength="12"
+             pattern="[A-Za-z]+" title="Only letters, 4-12 characters"></p>
+
+    <p><label for="e">Email:</label>
+      <input type="email" id="e" name="e" required placeholder="you@example.com"></p>
+
+    <p><label for="p">Phone (10 digits):</label>
+      <input type="tel" id="p" name="p" pattern="[0-9]{10}" required title="Enter 10 digits"></p>
+
+    <p><label for="a">Age (18-60):</label>
+      <input type="number" id="a" name="a" min="18" max="60" required></p>
+
+    <p><label for="w">Website:</label>
+      <input type="url" id="w" name="w"></p>
+
+    <p><label for="c">Country:</label>
+      <input type="text" id="c" name="c" value="India" readonly></p>
+
+    <p><label for="x">Disabled field:</label>
+      <input type="text" id="x" name="x" value="Not editable" disabled></p>
+
+    <p><input type="submit" value="Register"></p>
+  </form>
+</body>
+</html>
