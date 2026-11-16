@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 14</title>
+  <style>
+    table,th,td{border:1px solid #000;border-collapse:collapse;padding:6px}
+    .wrap{overflow-x:auto}
+    .full{width:100%}
+  </style>
+</head>
+<body>
+  <h2>Nested Table</h2>
+  <table>
+    <tr><th>Department</th><th>Details</th></tr>
+    <tr>
+      <td>Mechanical</td>
+      <td>
+        <table>
+          <tr><th>Subject</th><th>Marks</th></tr>
+          <tr><td>Thermodynamics</td><td>80</td></tr>
+          <tr><td>Mechanics</td><td>75</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <h2>Responsive Table</h2>
+  <div class="wrap">
+    <table class="full">
+      <tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>City</th><th>Branch</th></tr>
+      <tr><td>1</td><td>Amit</td><td>amit@example.com</td><td>9999999999</td><td>Ghaziabad</td><td>Mechanical</td></tr>
+      <tr><td>2</td><td>Riya</td><td>riya@example.com</td><td>8888888888</td><td>Delhi</td><td>ECE</td></tr>
+    </table>
+  </div>
+</body>
+</html>
